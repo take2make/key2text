@@ -5,6 +5,10 @@ tokenizer = T5Tokenizer.from_pretrained('t5-base')
 model = T5ForConditionalGeneration.from_pretrained('trained_model', 
                                                 return_dict=True)
 
+# ------------------------------------------------------------------ #
+#          generate text after correct preprocessing data            #
+# ------------------------------------------------------------------ #
+
 def generate(text):
     """
     generate new text by using text
