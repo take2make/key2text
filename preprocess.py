@@ -38,4 +38,5 @@ for st,unst in data_dct.items():
 
 
 df=pd.DataFrame(mdata_dct)
-df.to_csv('webNLG2020_train.csv')
+path_data = os.path.join("data", 'webNLG2020_train.csv')
+df.to_csv(path_data)
