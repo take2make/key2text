@@ -6,6 +6,11 @@ model = T5ForConditionalGeneration.from_pretrained('trained_model',
                                                 return_dict=True)
 
 def generate(text):
+    """
+    generate new text by using text
+    input: text - keywords
+    output: result - text from keywords
+    """
     texts = text.split(".")
     result = ""
     for txt in texts:
